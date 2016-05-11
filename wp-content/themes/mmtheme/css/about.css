@@ -1,0 +1,80 @@
+main { background-color: #f0f0f0; }
+.mvpHead span{ text-transform: uppercase; font-size: 15px; font-weight: bold; color: #615e5e; position: relative; top: -3px; padding: 0 20px 5px 0; border-bottom: 2px solid #f39c12; width: 70%; }
+.mvpHead i { width: 50px; height: 50px; background-color: #999; color: #fff; font-size: 30px; text-align: center; line-height: 1.5;
+	-webkit-transition: ease-out .2s;
+	-moz-transition: ease-out .2s;
+	-o-transition: ease-out .2s;
+	transition: ease-out .2s;
+	cursor: pointer;
+	margin-right: 3%;
+	border-bottom: 3px solid #f39c12;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+#team { padding-bottom: 20px; }
+.mvpHead i:hover { background-color: #e74c3c; border-bottom: 3px solid #e74c3c; }
+.motTxt, .wtcTxt { color: #7b7b7b; padding-bottom: 15px; font-size: 15px; }
+.mvpTxt { border-bottom: 3px solid #f6cd8b; }
+/*
+.areaHead { font-size: 18px; text-align: center; margin-bottom: 15px; }
+.areaHead span { color: #e74c3c; text-transform: uppercase; font-size: 22px; }
+*/
+.teamBlk { border: 1px solid #f6cd8b; border-radius: 5px; text-align: center; margin-bottom: 15px;
+-webkit-box-shadow: -1px -1px 79px -23px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px -1px 79px -23px rgba(0,0,0,0.75);
+box-shadow: -1px -1px 79px -23px rgba(0,0,0,0.75);
+}
+.teamImg { overflow: hidden; margin: auto; padding: 10px; }
+.teamImg img { border-radius: 100%; margin: auto; border: 2px solid #f7c2bd; }
+.mvpTxt, .teamName, .teamPos { color: #555; font-size: 14px; }
+.teamName { font-size: 16px;}
+ul.teamSoc { margin: 0; display: inline-block; margin: 0 auto; }
+.socIcons { background-color: #ccc; width: 100%; padding: 5px; border: 1px solid #ccc; height: 63px; opacity: 0;
+	-webkit-transition: ease-out .1s;
+	-moz-transition: ease-out .1s;
+	-o-transition: ease-out .1s;
+	transition: ease-out .1s;
+}
+.teamSoc li { float: left; }
+.teamBlk:hover { cursor:pointer; }
+.teamBlk:hover .socIcons { opacity: 1; cursor: pointer; }
+.socIcons li a:hover {
+	cursor: pointer;
+	animation: bounceOut .4s linear;
+}
+.teamSoc li a { display: block; border: 1px solid #f39c12; border-radius: 100%; background-color: #fff; margin: 0 5px; text-align: center; text-decoration: none; color: #f39c12; }
+.teamSoc li a i { padding: 10px; display: block; width: 50px; height: 50px; font-size: 18px; line-height: 1.7; }
+
+@keyframes bounceOut {
+	0% {
+		box-shadow: 0 0 0 2px #e74c3c;
+		opacity: 1;
+	}
+	25% {
+		box-shadow: 0 0 0 1px #e74c3c;
+		opacity: 1;
+	}
+	50% {
+		box-shadow: 0 0 0 3px #e74c3c;
+		opacity: 1;
+	}
+	75% {
+		box-shadow: 0 0 0 2px #e74c3c;
+		opacity: 1;
+	}
+	100% {
+		box-shadow: 0 0 0 2px #e74c3c;
+		opacity: 1;
+	}
+}
+@media screen and (max-width: 800px){
+	.socIcons { opacity: 1; }
+}
+@media screen and (max-width: 990px){
+	.teamSoc li a i { width: 31px; height: 31px; line-height: .7; font-size: 15px;}
+	.socIcons { height: 45px; }
+}
+@media screen and (max-width: 768px){
+	.teamSoc li a i {width: 50px; height: 50px; font-size: 18px; line-height: 1.7; }
+     .socIcons { height: 63px; }
+}

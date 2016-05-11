@@ -1,0 +1,33 @@
+.container { overflow: hidden; }
+.expArea { background-color: #f0f0f0; }
+ul { margin-bottom : 0!important; }
+.container.exp { margin-top: 30px; }
+.expCont.row { width: 70%; margin: 0 auto; margin-bottom: 20px; opacity: 0; padding: 15px 10px; background-color: #fff;
+-webkit-box-shadow: -1px -1px 79px -23px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px -1px 79px -23px rgba(0,0,0,0.75);
+box-shadow: -1px -1px 79px -23px rgba(0,0,0,0.75);
+}
+.expImg { margin-bottom: 10px; border-bottom: 3px solid #f39c12; opacity: 1; overflow:hidden; position: relative; }
+.expImg:hover img {
+-webkit-transform: scale(1.2, 1.2);
+-moz-transform: scale(1.2, 1.2);
+-ms-transform: scale(1.2, 1.2);
+-o-transform: scale(1.2, 1.2);
+transform: scale(1.2, 1.2);
+-webkit-transition: 0.3s all;
+-moz-transition: 0.3s all;
+-o-transition: 0.3s all;
+transition: 0.3s all;
+}
+.expDesc { font-family: 'roboto'; font-size: 14px; color: #999; }
+.expBtn { margin-top: 10px; background-color: #e74c3c; border-radius: 0 !important; }
+.expBtn:hover { background-color: #c0392b; }
+#read-more { color: #fff; }
+#read-more:hover { text-decoration: none; }
+.container .expCont:nth-child(odd) {position: relative; left: -300px; }
+.container .expCont:nth-child(even) { position: relative; left: 300px; }
+@media screen and (max-width: 800px) {
+	.expCont.row { width: 100%; }
+	.container .expCont:nth-child(even) {position: relative; left: -150px;}
+	.container .expCont:nth-child(odd) { position: relative; left: 150px; }
+}
