@@ -18,6 +18,14 @@
     <script src="<?php echo get_template_directory_uri();?>/resources/slick/slick.min.js" type="text/javascript"></script>
     <script src="<?php echo get_template_directory_uri();?>/resources/bootstrap-3.3.6-dist/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="<?php echo get_template_directory_uri();?>/js/excerpt.js" type="text/javascript"></script>
+  <script>
+    $(document).ready(function(){
+      $('.navItem li a:first').addClass('active');
+      $('.fade').animate({
+        opacity: 1
+      }, 500);
+    });
+  </script>
 </head>
 <body>
   <?php get_header(); ?>
@@ -142,11 +150,5 @@
 <?php wp_footer(); ?>
 <script src="<?php echo get_template_directory_uri();?>/js/slick.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri();?>/js/main.js" type="text/javascript"></script>
-    <script>
-        $(document).ready(function(){
-           $('.navItem li a:first').addClass('active'); 
-        });
-        
-    </script>
 </body>
 </html>

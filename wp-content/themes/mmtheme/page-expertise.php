@@ -15,6 +15,14 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/resources/bootstrap-3.3.6-dist/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,700,500' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/excerpt.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.navItem li:nth-child(3) a').addClass('active');
+        $('.fade').animate({
+          opacity: 1
+        }, 500);
+      });
+    </script>
 </head>
 <body>
  <?php get_header(); ?>
@@ -45,10 +53,5 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/main.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/expertise.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/resources/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
- <script>
-        $(document).ready(function(){
-           $('.navItem li:nth-child(3) a').addClass('active'); 
-        });
-</script>
 </body>
 </html>

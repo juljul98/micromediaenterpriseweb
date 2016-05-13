@@ -15,6 +15,14 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,700,500' rel='stylesheet' type='text/css'>
     <script src="<?php echo get_template_directory_uri();?>/resources/jquery/jquery.js" type="text/javascript"></script>
     <script src="<?php echo get_template_directory_uri();?>/resources/bootstrap-3.3.6-dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script>
+      $(document).ready(function(){
+        $('.navItem li:nth-child(2) a').addClass('active');
+        $('.fade').animate({
+          opacity: 1
+        }, 500);
+      });
+    </script>
 </head>
 <body>
 <?php get_header(); ?>
@@ -44,11 +52,5 @@
 <?php wp_footer(); ?>
 <script src="<?php echo get_template_directory_uri();?>/js/main.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri();?>/resources/jquery/jquery.js" type="text/javascript"></script>
-<script>
-    $(document).ready(function(){
-           $('.navItem li:nth-child(2) a').addClass('active'); 
-     });
-    
-</script>
 </body>
 </html>

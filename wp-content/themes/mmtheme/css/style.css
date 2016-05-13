@@ -23,7 +23,7 @@ z-index: 10;
 .pattern {
 background: url('../images/Pattern3.gif');
 min-height: 55px;
-opacity: .6;
+opacity: .2;
 }
 
 .menuLogo {
@@ -60,10 +60,11 @@ font-size: 36px;
 color: #fff;
 }
 
-#wpadminbar, .screen-reader-response { display: none; }
+.screen-reader-response { display: none; }
 
 .navbar {
 margin-bottom: 0 !important;
+border-bottom: 0 !important;
 }
 
 .container-fluid.sticky {
@@ -106,7 +107,7 @@ background-color: #f86159;
 }
 
 .navItem {
-margin-left: 22%;
+margin-left: 27%;
 margin-bottom: 0;
 }
 
@@ -835,10 +836,10 @@ border-bottom: 2px solid #b54d47;
 @media screen and (max-width: 999px) {
 .menuLogo { display: none; }
 .navItem li a { width: 112px; padding: 15px 10px;}
-.navItem { margin-left: 12%; margin-bottom: 0; }
+.navItem { margin-left: 19%; margin-bottom: 0; }
 }
 @media screen and (max-width: 838px) {
-.navItem { margin-left: 2%; margin-bottom: 0; }
+.navItem { margin-left: 12%; margin-bottom: 0; }
 .container-fluid.sticky { position: fixed; top: 0; }
 .slider li .bannerTitle { left: 26%; font-size: 30px; }
 .btnContct  { margin-top: 30px; }

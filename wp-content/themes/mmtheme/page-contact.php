@@ -15,6 +15,14 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/resources/bootstrap-3.3.6-dist/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,700,500' rel='stylesheet' type='text/css'>
     <script src="<?php echo get_template_directory_uri();?>/js/excerpt.js" type="text/javascript"></script>
+    <script>
+      $(window).load(function(){
+        $('.navItem li:nth-child(5) a').addClass('active');
+        $('.fade').animate({
+          opacity: 1
+        }, 500);
+      });
+    </script>
 </head>
 <body>
 <?php get_header(); ?>
@@ -25,7 +33,7 @@
 <section class="contactArea">
     <div class="container">
        <h2 class="secHead cent">Leave us a <span>Message</span></h2>
-       <?php echo do_shortcode( '[contact-form-7 id="15" title="Contact"]' ); ?> 
+       <?php echo do_shortcode( '[contact-form-7 id="15" title="Contact"]' ); ?>
     </div>
 </section>
 <section>
@@ -38,10 +46,5 @@
 <?php wp_footer(); ?>
 <script src="<?php echo get_template_directory_uri();?>/js/main.js"></script>
 <script src="<?php echo get_template_directory_uri();?>/resources/bootstrap-3.3.6-dist/js/bootstrap.min.js" type="text/javascript"></script>
-<script>
-     $(window).load(function(){
-           $('.navItem li:nth-child(6) a').addClass('active'); 
-        });
-</script>
 </body>
 </html>
